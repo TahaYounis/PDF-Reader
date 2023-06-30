@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12sp">
+
+        <ImageView
+            android:id="@+id/imgPDF"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pdf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPdfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_marginEnd="12sp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/poppins_thin"
+            android:gravity="start"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPDF"
+            app:layout_constraintStart_toEndOf="@+id/imgPDF"
+            app:layout_constraintTop_toTopOf="@+id/imgPDF" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
